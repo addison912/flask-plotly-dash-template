@@ -1,0 +1,5 @@
+CREATE USER flask_user WITH PASSWORD `echo "$POSTGRES_PASSWORD"`;
+
+CREATE DATABASE flask_app;
+
+GRANT ALL PRIVILEGES ON DATABASE flask_app TO flask_user;

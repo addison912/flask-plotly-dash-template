@@ -1,0 +1,16 @@
+// variables
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import "variables";
+
+// components
+@import "components/home";
+@import "components/header";
+@import "components/global";
+@import "components/login";
+@import "components/example-app";
+@import "components/navbar";
+@import "components/dash";
+
+
+// To start sass run:
+// sass --watch app/static/sass:app/static/css

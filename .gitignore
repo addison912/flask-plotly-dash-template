@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.env
+.env_*
+*.log*
+.DS_Store
+scratch/
+scratch*
+logs
+*.log
+build/
+dist/
+pip-log.txt
+.venv

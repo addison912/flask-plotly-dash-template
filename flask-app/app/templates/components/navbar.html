@@ -1,0 +1,43 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="nav-logo-wrapper" href="/">
+    <img
+      src="{{ url_for('static', filename='img/logo.png') }}"
+      alt="Logo"
+      class="nav-logo"
+    />
+    <div class="navbar-brand">Tide Pool Tech</div>
+  </a>
+
+  <div class="d-flex justify-content-end">
+    <div class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle"
+        href="#"
+        id="navbarDarkDropdownMenuLink"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <i class="fas fa-user"></i>
+      </a>
+      <ul
+        class="dropdown-menu dropdown-menu-end"
+        aria-labelledby="navbarDarkDropdownMenuLink"
+      >
+        {% if current_user.is_authenticated %}
+        <a class="dropdown-item" href="/logout">Sign Out</a>
+        <li><hr class="dropdown-divider" /></li>
+        <a class="dropdown-item" href="/example-app">Example App</a>
+        <a class="dropdown-item" href="/demo">Demo App</a>
+        <a class="dropdown-item" href="/protected-app">Protected App</a>
+        {% else %} {% if request.path != "/" %}
+        <a class="dropdown-item" href="/">Home</a>
+        <li><hr class="dropdown-divider" /></li>
+        {% endif %}
+        <a class="dropdown-item" href="/login">Sign In</a>
+        <a class="dropdown-item" href="/register">Register</a>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

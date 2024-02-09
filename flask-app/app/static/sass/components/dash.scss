@@ -1,0 +1,21 @@
+.dash-template {
+  .nav-items-wrapper {
+    max-width: 1200px;
+  }
+  background-color: aqua;
+  nav.navbar .nav-items-wrapper {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logout-button {
+    width: 150px;
+    margin: 48px;
+  }
+}
+
+#welcome_message{
+  text-align: center;
+}

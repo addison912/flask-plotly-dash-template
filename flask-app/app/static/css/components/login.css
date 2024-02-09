@@ -1,0 +1,44 @@
+.login-template .container,
+.register-template .container,
+.verification-template .container {
+  padding: 60px 96px;
+}
+.login-template .content-section,
+.register-template .content-section,
+.verification-template .content-section {
+  padding: 48px;
+  background-color: #fafafa;
+}
+.login-template #login_container,
+.register-template #login_container,
+.verification-template #login_container {
+  width: 100%;
+  margin: 12px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-template #login_wrapper,
+.register-template #login_wrapper,
+.verification-template #login_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+}
+.login-template #login_container .logo,
+.register-template #login_container .logo,
+.verification-template #login_container .logo {
+  width: 48px;
+}
+.login-template #login_button,
+.register-template #login_button,
+.verification-template #login_button {
+  width: 100%;
+  height: 32px;
+  margin: 12px 12px 0 12px;
+}
+
+/*# sourceMappingURL=login.css.map */

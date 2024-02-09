@@ -1,0 +1,23 @@
+{% extends "layout.html" %} {% block styles %} {{ super() }} {{ styles }} {%
+endblock %} {% block content %}
+<div class="card">
+  <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo" />
+  <h1 class="site-title">{{ title }}</h1>
+  {% if current_user.is_authenticated == False %}
+    <center>
+      <a href="{{ login_url }}"><div id="login_button" class="btn btn-primary">Login</div></a>
+    </center>
+  {% endif %}
+  <!-- <p class="subtitle">Demo for embedding Plotly Dash within Flask Apps</p> -->
+  <a href="/example-app" class="dash-link">
+    <span>Example App</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+<!-- <div class="container pb-5">
+  <div class="row justify-content-center">
+    <div class="col-auto col-md-10">{{ content }}</div>
+  </div>
+</div> -->
+<!-- {% include 'components/footer.html' %} -->
+{% endblock %} {% block scripts %} {{ super() }} {% endblock %}

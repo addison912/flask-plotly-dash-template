@@ -1,0 +1,39 @@
+.login-template,
+.register-template,
+.verification-template {
+  .container {
+    padding: 60px 96px;
+  }
+
+  .content-section {
+    padding: 48px;
+    background-color: #fafafa;
+  }
+
+  #login_container {
+    width: 100%;
+    margin: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #login_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+  }
+
+  #login_container .logo {
+    width: 48px;
+  }
+
+  #login_button {
+    width: 100%;
+    height: 32px;
+    margin: 12px 12px 0 12px;
+  }
+}

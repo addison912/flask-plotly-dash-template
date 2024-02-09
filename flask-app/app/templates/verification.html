@@ -1,0 +1,33 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="content-section card">
+  <form method="POST" action="">
+    {{ form.hidden_tag()}}
+    <fieldset class="form-group">
+      <legend class="border-bottom mb-4">Verify Email</legend>
+      <div class="form-group mb-2">
+        {{form.verification_code.label(class="form-control-label")}} 
+        {% if form.verification_code.errors%} 
+          {{ form.verification_code(class="form-control form-control-lg is-invalid")}}
+        <div class="invalid-feedback">
+          {% for error in form.verification_code.errors %}
+            <span>{{ error}}</span>
+          {% endfor %}
+        </div>
+        {% else %} {{form.verification_code(class="form-control form-control-lg")}} 
+        {% endif %}
+        {% if error_message != None %}
+          <div class="error-message">{{ error_message }}</div>
+        {% endif %}
+      </div>
+    </fieldset>
+    <div class="form-group mb-2">
+      {{form.submit(class="btn btn-outline-primary")}}
+    </div>
+    <small class="text-muted ml-2">
+      <a href="/send-verification" class="text-reset">Resend verifcation code</a>
+    </small>
+  </form>
+</div>
+
+{% endblock content %}

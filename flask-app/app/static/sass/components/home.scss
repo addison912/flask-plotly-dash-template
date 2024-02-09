@@ -1,0 +1,73 @@
+.home-template {
+  .container {
+    margin-top: 128px;
+  }
+  .card {
+    width: 800px;
+    max-width: 93%;
+    height: fit-content;
+    margin: 96px auto;
+    padding: 60px;
+    background: white;
+    box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
+    text-align: center;
+
+    @media (max-width: 800px) {
+      max-width: 78%;
+      width: unset;
+      padding: 40px;
+    }
+
+    .logo {
+      width: 50px;
+      margin: auto;
+    }
+
+    .site-title {
+      margin: 10px 0 24px 0;
+      color: #5f6988;
+      font-family: proxima-nova, sans-serif;
+      font-size: 2.3em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0;
+      color: #7f92af;
+      font-size: 1.08em;
+    }
+
+    a {
+      color: #79aec8;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .dash-link {
+      display: block;
+      margin-top: 30px;
+      font-size: 1.1em;
+      font-weight: 600;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      i {
+        margin-left: 6px;
+        font-size: 0.9em;
+      }
+    }
+
+    #login_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 32px;
+      margin: 12px 12px 0 12px;
+    }
+  }
+}

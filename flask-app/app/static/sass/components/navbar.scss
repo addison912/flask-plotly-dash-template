@@ -1,0 +1,41 @@
+nav.navbar {
+  margin-bottom: 64px;
+  padding: 12px 24px 12px 24px;
+  .dropdown-menu {
+    margin-top: 16px;
+    padding: 4px 0 12px 0;
+  }
+  .dropdown-item {
+    margin: 12px 0 4px 0;
+  }
+}
+
+.nav-logo-wrapper {
+  display: flex;
+}
+
+.navbar-brand {
+  background: none;
+}
+.nav-logo {
+  height: 48px;
+  margin: 4px 12px 4px 0;
+}
+
+a.dropdown-toggle {
+  color: #e8e8e8;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-menu {
+  margin-right: 12px;
+}
+
+a.nav-link:focus,
+a.nav-link:hover {
+  color: #9999aa;
+}
